@@ -42,7 +42,7 @@ module KidsRubyInstaller
       exit 1
     end
 
-    railsinstaller_version = File.read(File.join(KidsRubyInstaller::Root, "VERSION.txt")).chomp
+    kidsrubyinstaller_version = File.read(File.join(KidsRubyInstaller::Root, "VERSION.txt")).chomp
 
     printf "\nPackaging... this *will* take a while...\n"
 
@@ -52,7 +52,7 @@ module KidsRubyInstaller
           "/dRubyPath=\"#{KidsRubyInstaller::Ruby187.rename}\"",
           "/dResourcesPath=\"#{File.join(KidsRubyInstaller::Root, "resources")}\"",
           "/o\"#{KidsRubyInstaller::PackageDir}\"",
-          "/frailsinstaller-#{railsinstaller_version}"
+          "/frailsinstaller-#{kidsrubyinstaller_version}"
 
   end
 
