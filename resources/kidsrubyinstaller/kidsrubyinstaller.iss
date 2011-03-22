@@ -41,9 +41,9 @@
 #endif
 
 ; Build Installer details using above values
-#define InstallerName "KidsRubyInstaller"
+#define InstallerName "KidsRuby"
 #define InstallerNameWithVersion InstallerName + " " + InstallerVersion
-#define InstallerPublisher "KidsRubyInstaller Team"
+#define InstallerPublisher "KidsRuby Team"
 #define InstallerHomepage "http://www.kidsrubyinstaller.org/"
 
 #define CurrentYear GetDateTimeString('yyyy', '', '')
