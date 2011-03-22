@@ -1,4 +1,4 @@
-module kidsrubyinstaller
+module KidsRubyInstaller
 
   #
   # Load initial objects (OpenStruct) from kidsrubyinstaller.yml
