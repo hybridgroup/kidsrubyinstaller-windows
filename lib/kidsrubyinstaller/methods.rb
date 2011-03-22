@@ -356,7 +356,10 @@ module KidsRubyInstaller
 
     ruby_binary("gem", "install", "htmlentities", File.join(Stage, Ruby187.rename))
 
-    Dir.chdir(File.join(Stage, KidsRuby.name)) do |dir|
+    kidsruby_stage_path = File.join(Stage, KidsRuby.name)
+    FileUtils.mkdir_p(kidsruby_stage_path) unless File.exist?(kidsruby_stage_path)
+
+    Dir.chdir(kidsruby_stage_path) do |dir|
       sh "git clone git://github.com/hybridgroup/kidsruby.git  ."
       sh "git checkout -t origin/release"
     end
