@@ -1,0 +1,4 @@
+0.0.1 - Initial refactoring and addition of KidsRuby source.
+
+0.0.0 - Initial repository created with configuration and directory outline.
+        No functionality at this point.
