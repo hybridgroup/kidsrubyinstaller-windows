@@ -52,7 +52,7 @@ module KidsRubyInstaller
           "/dRubyPath=\"#{KidsRubyInstaller::Ruby187.rename}\"",
           "/dResourcesPath=\"#{File.join(KidsRubyInstaller::Root, "resources")}\"",
           "/o\"#{KidsRubyInstaller::PackageDir}\"",
-          "/frailsinstaller-#{kidsrubyinstaller_version}"
+          "/fkidsrubyinstaller-#{kidsrubyinstaller_version}"
 
   end
 

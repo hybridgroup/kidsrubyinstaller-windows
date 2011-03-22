@@ -1,7 +1,7 @@
 @ECHO OFF
 
 REM
-REM Environment setup file for RailsInstaller.
+REM Environment setup file for KidsRuby Installer.
 REM
 
 REM
@@ -12,7 +12,7 @@ SET RUBY_DIR=%CD%
 POPD
 
 REM
-REM Now Determine the RailsInstaller Root directory (parent directory of Ruby)
+REM Now Determine the KidsRuby Installer Root directory (parent directory of Ruby)
 REM
 PUSHD %RUBY_DIR%\..
 SET ROOT_DIR=%CD%
