@@ -22,6 +22,8 @@ module KidsRubyInstaller
 
     stage_rails_sample_application
 
+    stage_kidsruby
+
     stage_setup_scripts
 
     stage_msvc_runtime

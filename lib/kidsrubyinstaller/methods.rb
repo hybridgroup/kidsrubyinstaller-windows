@@ -347,6 +347,22 @@ module KidsRubyInstaller
 
   end
 
+  # Clones the latest kidsruby release branch into the staged Ruby path.
+  def self.stage_kidsruby
+
+    section KidsRuby
+
+    ruby_binary("gem", "install", "qtbindings", File.join(Stage, Ruby187.rename))
+
+    ruby_binary("gem", "install", "htmlentities", File.join(Stage, Ruby187.rename))
+
+    Dir.chdir(File.join(Stage, KidsRuby.name)) do |dir|
+      sh "git clone git://github.com/hybridgroup/kidsruby.git  ."
+      sh "git checkout -t origin/release"
+    end
+
+  end
+
   # Renders setup scripts to be used post-installation
   # They have installation-sensitive information (installation path)
   def self.stage_setup_scripts
