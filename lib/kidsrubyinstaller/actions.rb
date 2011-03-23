@@ -2,7 +2,7 @@ module KidsRubyInstaller
 
   def self.build!
 
-    components = [ BSDTar, SevenZip, DevKit, Git, Ruby187, PostgresServer, Sqlite3, Sqlite3Dll ]
+    components = [ BSDTar, SevenZip, DevKit, Git, Ruby187, Sqlite3, Sqlite3Dll ]
 
     components.each do |package|
       section  package.title
@@ -16,11 +16,7 @@ module KidsRubyInstaller
 
     stage_git
 
-    stage_postgresql
-
     stage_gems
-
-    stage_rails_sample_application
 
     stage_kidsruby
 

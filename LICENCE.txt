@@ -1,4 +1,4 @@
-Copyright (c) 2010-2011 RailsInstaller Team.
+Copyright (c) 2010-2011 KidsRubyInstaller Team.
 All rights reserved. See CONTRIBUTORS for complete list.
 
 Permission is hereby granted, free of charge, to any person

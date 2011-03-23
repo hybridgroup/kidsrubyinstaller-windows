@@ -260,26 +260,6 @@ module KidsRubyInstaller
   end
 
   #
-  # Copy required Postgresql files on to the stage
-  #
-  def self.stage_postgresql
-
-    PostgresServer.files.each do |file|
-
-      if File.exist?(File.join(Stage, file))
-
-        FileUtils.cp(
-          File.join(Stage, PostgresServer.target, "bin", file),
-          File.join(Stage, Ruby187.rename, "bin", file)
-        )
-
-      end
-
-    end
-
-  end
-
-  #
   # Add functionality to DevKit object that was loaded during configure.
   #
   def self.link_devkit_with_ruby
@@ -323,28 +303,6 @@ module KidsRubyInstaller
     section Gems
 
     build_gems(File.join(Stage, Ruby187.rename), Gems.list)
-
-    build_gem(File.join(Stage, Ruby187.rename), "pg", {
-      :args => [
-          "--",
-          "--with-pg-include=#{File.join(Stage, "pgsql", "include")}",
-          "--with-pg-lib=#{File.join(Stage, "pgsql", "lib")}"
-      ].join(' ')
-    })
-  end
-
-  def self.stage_rails_sample_application
-
-    # Generate sample rails application in the Rails application directory on
-    # stage.
-    section Rails
-
-    sample = File.join(Stage, "Sites", "sample")
-
-    FileUtils.rm_rf(sample) if File.exist?(sample)
-
-    ruby_binary("rails", "new", "sample", File.join(Stage, Ruby187.rename))
-
   end
 
   # Clones the latest kidsruby release branch into the staged Ruby path.

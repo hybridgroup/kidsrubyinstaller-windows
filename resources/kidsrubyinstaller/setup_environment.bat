@@ -27,11 +27,6 @@ SET RUBY_DIR=
 SET ROOT_DIR=
 
 REM
-REM Create the HOME\Sites directory.
-REM
-IF NOT EXIST %HOMEDRIVE%\Sites. (md %HOMEDRIVE%\Sites.)
-
-REM
 REM Set the HOME environment variables for Ruby & Gems to use with ENV["HOME"]
 REM
 SET HOME=%HOMEDRIVE%%HOMEPATH%

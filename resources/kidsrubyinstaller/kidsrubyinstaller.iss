@@ -107,7 +107,6 @@ Source: {#StagePath}\Git\*; DestDir: {app}\Git; Flags: recursesubdirs createalls
 Source: {#StagePath}\KidsRuby\*; DestDir: {app}\KidsRuby; Flags: recursesubdirs createallsubdirs
 Source: {#StagePath}\DevKit\*; DestDir: {app}\DevKit; Excludes: "config.yml"; Flags: recursesubdirs createallsubdirs
 Source: {#StagePath}\DevKit\config.yml; DestDir: {app}\DevKit; AfterInstall: UpdateDevKitConfig('{app}\{#RubyPath}', '{app}\DevKit\config.yml')
-Source: {#StagePath}\Sites\*; DestDir: {sd}\Sites; Flags: recursesubdirs createallsubdirs
 Source: {#StagePath}\scripts\*; DestDir: {app}\scripts\; Flags: recursesubdirs createallsubdirs
 ; TODO: Instead of running the full vcredist, simply extract and bundle the dll
 ;       files with an associated manifest.
@@ -122,9 +121,8 @@ Source: setup_environment.bat; DestDir: {app}\{#RubyPath}
 ;Root: HKCU; Subkey: Software\KidsRubyInstaller; ValueType: string; ValueName: ; ValueData: ; Flags: uninsdeletevalue uninsdeletekeyifempty; Check: IsNotAdmin
 
 [Icons]
-Name: {group}\Kids Ruby Interactive; Filename: "{app}\{#RubyPath}\bin\ruby.exe"; WorkingDir: "{app}\KidsRuby" ; Parameters: "{app}\KidsRuby\main.rb"; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists
+Name: {group}\Kids Ruby; Filename: "{app}\{#RubyPath}\bin\ruby.exe"; WorkingDir: "{app}\KidsRuby" ; Parameters: "{app}\KidsRuby\main.rb"; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists
 Name: {group}\Interactive Ruby; Filename: {app}\{#RubyPath}\bin\irb.bat; WorkingDir: {app}\{#RubyPath} ; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists
-Name: {group}\Command Prompt with Ruby and Rails; Filename: {sys}\cmd.exe; Parameters: /E:ON /K {app}\{#RubyPath}\setup_environment.bat; WorkingDir: {sd}\Sites; IconFilename: {sys}\cmd.exe; Flags: createonlyiffileexists
 ; Name: {group}\RubyGems Documentation Server; Filename: {app}\{#RubyPath}\bin\gem.bat; Parameters: server; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists runminimized
 ; Name: {group}\Git Bash; Filename: {sys}\cmd.exe; Parameters: "/c """"{app}\Git\bin\sh.exe"" --login -i"""; WorkingDir: {sd}\Sites; IconFilename: {app}\Git\etc\git.ico; Flags: createonlyiffileexists
 ; {%HOMEPATH%}
