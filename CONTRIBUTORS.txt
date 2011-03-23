@@ -14,3 +14,6 @@
 - Ron Evans
   :email: ron.evans@gmail.com
   :website: http://deadprogrammersociety.com/
+
+- Elisha Fleck
+  :website: http://portfolio.elishafleck.com
