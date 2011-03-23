@@ -310,9 +310,11 @@ module KidsRubyInstaller
 
     section KidsRuby
 
-    ruby_binary("gem", "install", "qtbindings", File.join(Stage, Ruby187.rename))
+    #ruby_binary("gem", "install", , File.join(Stage, Ruby187.rename))
+build_gem(File.join(Stage, Ruby187.rename),"qtbindings")
 
-    ruby_binary("gem", "install", "htmlentities", File.join(Stage, Ruby187.rename))
+    #ruby_binary("gem", "install", "htmlentities", File.join(Stage, Ruby187.rename))
+build_gem(File.join(Stage, Ruby187.rename),"htmlentities")
 
     kidsruby_stage_path = File.join(Stage, KidsRuby.name)
 
@@ -418,12 +420,13 @@ module KidsRubyInstaller
 
     command += options[:args] if options[:args]
 
-    applications_path = File.join(KidsRubyInstaller::Stage, "Sites")
+    #applications_path = File.join(KidsRubyInstaller::Stage)
 
-    FileUtils.mkdir_p applications_path unless File.exist?(applications_path)
+    #FileUtils.mkdir_p applications_path unless File.exist?(applications_path)
 
-    Dir.chdir(applications_path) { sh command }
+    #Dir.chdir(applications_path) { sh command }
 
+    sh command
   end
 
   def self.iscc(*params)
