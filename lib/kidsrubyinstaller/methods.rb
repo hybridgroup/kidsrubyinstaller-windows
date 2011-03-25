@@ -310,11 +310,9 @@ module KidsRubyInstaller
 
     section KidsRuby
 
-    #ruby_binary("gem", "install", , File.join(Stage, Ruby187.rename))
-build_gem(File.join(Stage, Ruby187.rename),"qtbindings")
-
-    #ruby_binary("gem", "install", "htmlentities", File.join(Stage, Ruby187.rename))
-build_gem(File.join(Stage, Ruby187.rename),"htmlentities")
+    build_gem(File.join(Stage, Ruby187.rename),"qtbindings")
+    build_gem(File.join(Stage, Ruby187.rename),"htmlentities")
+    build_gem(File.join(Stage, Ruby187.rename),"gosu")
 
     kidsruby_stage_path = File.join(Stage, KidsRuby.name)
 
