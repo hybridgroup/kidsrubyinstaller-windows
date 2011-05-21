@@ -1,3 +1,5 @@
+0.6.1 - update to version 0.6.1 of editor
+
 0.6.0 - update to version 0.6.0 of editor
 
 0.5.0 - update to version 0.5.0 of editor
