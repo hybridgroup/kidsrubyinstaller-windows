@@ -2,7 +2,7 @@ module KidsRubyInstaller
 
   def self.build!
 
-    components = [ BSDTar, SevenZip, DevKit, Git, Ruby187, Sqlite3, Sqlite3Dll ]
+    components = [ BSDTar, SevenZip, DevKit, Git, Ruby192, Sqlite3, Sqlite3Dll ]
 
     components.each do |package|
       section  package.title
@@ -47,7 +47,7 @@ module KidsRubyInstaller
     iscc "\"#{File.join(KidsRubyInstaller::Root, "resources", "kidsrubyinstaller", "kidsrubyinstaller.iss")}\"",
           "/dInstallerVersion=#{kidsrubyinstaller_version}",
           "/dStagePath=\"#{KidsRubyInstaller::Stage}\"",
-          "/dRubyPath=\"#{KidsRubyInstaller::Ruby187.rename}\"",
+          "/dRubyPath=\"#{KidsRubyInstaller::Ruby192.rename}\"",
           "/dResourcesPath=\"#{File.join(KidsRubyInstaller::Root, "resources")}\"",
           "/o\"#{KidsRubyInstaller::PackageDir}\"",
           "/fkidsrubyinstaller-#{kidsrubyinstaller_version}"
