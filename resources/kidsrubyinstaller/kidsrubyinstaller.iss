@@ -16,9 +16,9 @@
 ; iscc resouces\kidsrubyinstaller\kidsrubyinstaller.iss \
 ;       /dInstallerVersion=0.1.0 \
 ;       /dStagePath=stage \
-;       /dRubyPath=Ruby1.8.7 \
+;       /dRubyPath=Ruby1.9.2 \
 ;       /opkg
-;       /fkidsrubyinstaller-0.1.0.exe
+;       /fkidsrubyinstaller-0.7.0.exe
 
 #if Defined(InstallerVersion) == 0
   #error Please provide a InstallerVersion definition using a /d parameter.
@@ -77,7 +77,7 @@ WizardSmallImageFile={#ResourcesPath}\images\KidsRubyInstallerWizardImageSmall.b
 PrivilegesRequired=lowest
 ChangesAssociations=yes
 ChangesEnvironment=yes
-
+SetupIconFile={#ResourcesPath}\images\kidsruby.ico
 #if Defined(SignPackage) == 1
 SignTool=risigntool sign /a /d $q{#InstallerNameWithVersion}$q /du $q{#InstallerHomepage}$q /t $qhttp://timestamp.comodoca.com/authenticode$q $f
 #endif
@@ -121,7 +121,7 @@ Source: setup_environment.bat; DestDir: {app}\{#RubyPath}
 ;Root: HKCU; Subkey: Software\KidsRubyInstaller; ValueType: string; ValueName: ; ValueData: ; Flags: uninsdeletevalue uninsdeletekeyifempty; Check: IsNotAdmin
 
 [Icons]
-Name: {group}\Kids Ruby; Filename: "{app}\{#RubyPath}\bin\ruby.exe"; WorkingDir: "{app}\KidsRuby" ; Parameters: "{app}\KidsRuby\main.rb"; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists
+Name: {group}\Kids Ruby; Filename: "{app}\{#RubyPath}\bin\ruby.exe"; WorkingDir: "{app}\KidsRuby" ; Parameters: "{app}\KidsRuby\main.rb"; IconFilename: {#ResourcesPath}\images\kidsruby.ico; Flags: createonlyiffileexists
 Name: {group}\Interactive Ruby; Filename: {app}\{#RubyPath}\bin\irb.bat; WorkingDir: {app}\{#RubyPath} ; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists
 ; Name: {group}\RubyGems Documentation Server; Filename: {app}\{#RubyPath}\bin\gem.bat; Parameters: server; IconFilename: {app}\{#RubyPath}\bin\ruby.exe; Flags: createonlyiffileexists runminimized
 ; Name: {group}\Git Bash; Filename: {sys}\cmd.exe; Parameters: "/c """"{app}\Git\bin\sh.exe"" --login -i"""; WorkingDir: {sd}\Sites; IconFilename: {app}\Git\etc\git.ico; Flags: createonlyiffileexists
