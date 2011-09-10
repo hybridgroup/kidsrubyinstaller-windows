@@ -3,6 +3,7 @@ module KidsRubyInstaller # Ensure that the KidsRubyInstaller project root is def
   Stage      = File.expand_path(File.join(Root, "stage"))
   Archives   = File.expand_path(File.join(Root, "archives"))
   Scripts    = File.expand_path(File.join(Root, "resources/scripts"))
+  Icons    = File.expand_path(File.join(Root, "resources/icons"))
   PackageDir = File.expand_path(File.join(Root, "pkg"))
 end
 
