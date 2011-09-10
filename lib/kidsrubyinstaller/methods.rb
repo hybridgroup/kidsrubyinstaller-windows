@@ -360,6 +360,23 @@ module KidsRubyInstaller
 
   end
 
+  # Renders icons to be used post-installation
+  # They have installation-sensitive information (installation path)
+  def self.stage_icons
+
+    section Icons
+
+    icons_path = File.join(KidsRubyInstaller::Stage, "icons")
+
+    FileUtils.mkdir_p(icons_path) unless File.exist?(icons_path)
+
+    FileUtils.cp(
+      File.join(KidsRubyInstaller::Icons, "kidsruby.ico"),
+      File.join(icons_path, "kidsruby.ico")
+    )
+
+  end
+
   #
   # build_gems
   #

@@ -22,6 +22,8 @@ module KidsRubyInstaller
 
     stage_setup_scripts
 
+    stage_icons
+
     stage_msvc_runtime
   end
 
