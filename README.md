@@ -30,12 +30,18 @@ KidsRuby Installer is bootstrapped, built and packaged via rake tasks.
 
   > rake build
 
-6. Use Inno Setup to package RailsInstaller
+6. Use Inno Setup to package KidsRubyInstaller
 
   > rake package
 
-7. Use the generated RailsInstaller.exe, be happy and prosperous! Be
+7. Use the generated KidsRubyInstaller.exe, be happy and prosperous! Be
    sure to share it with all of your friends!
+
+### Releasing a new version
+
+1. Update VERSION.txt
+
+2. Update CHANGELOG.txt
 
 ### Development Kit (DevKit)
 
@@ -43,8 +49,7 @@ A MSYS/MinGW based toolkit that enables KidsRuby Installer to build native C/C++
 packages, both for Ruby and gems. DevKit is built and maintained by the
 wonderful folks over at the RubyInstaller (http://rubyinstaller.org/) project.
 
-
-### Ruby 1.8.7 on Windows
+### Ruby 1.9.2 on Windows
 
 KidsRuby Installer is a self contained package installer which installs Ruby and
 RubyGems on a windows system, head over to http://rubyinstaller.org/ for more
