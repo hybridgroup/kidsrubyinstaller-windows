@@ -35,12 +35,12 @@ module KidsRubyInstaller
   #
   def self.package!
 
-    unless %x[iscc].grep("Inno Setup 5")
-      printf "ERROR: Inno Setup 5 is required in order to package KidsRubyInstaller.\n"
-      printf "  http://www.jrsoftware.org/isdl.php#qsp\n"
-      printf "Please see README for full KidsRubyInstaller instructions.\n"
-      exit 1
-    end
+    #unless %x[iscc].grep("Inno Setup 5")
+      #printf "ERROR: Inno Setup 5 is required in order to package KidsRubyInstaller.\n"
+      #printf "  http://www.jrsoftware.org/isdl.php#qsp\n"
+      #printf "Please see README for full KidsRubyInstaller instructions.\n"
+      #exit 1
+    #end
 
     kidsrubyinstaller_version = File.read(File.join(KidsRubyInstaller::Root, "VERSION.txt")).chomp
 
