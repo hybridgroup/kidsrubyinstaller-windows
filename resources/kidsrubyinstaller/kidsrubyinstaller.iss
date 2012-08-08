@@ -84,6 +84,7 @@ SignTool=risigntool sign /a /d $q{#InstallerNameWithVersion}$q /du $q{#Installer
 
 [Languages]
 Name: en; MessagesFile: "compiler:Default.isl,{#ResourcesPath}\i18n\en.isl"
+Name: es; MessagesFile: "compiler:Languages\Spanish.isl,{#ResourcesPath}\i18n\es.isl"
 Name: fr; MessagesFile: "compiler:Languages\French.isl,{#ResourcesPath}\i18n\fr.isl"
 
 [Files]
