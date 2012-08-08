@@ -84,6 +84,7 @@ SignTool=risigntool sign /a /d $q{#InstallerNameWithVersion}$q /du $q{#Installer
 
 [Languages]
 Name: en; MessagesFile: "compiler:Default.isl,{#ResourcesPath}\i18n\en.isl"
+Name: fr; MessagesFile: "compiler:Languages\French.isl,{#ResourcesPath}\i18n\fr.isl"
 
 [Files]
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
