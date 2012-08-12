@@ -312,7 +312,7 @@ module KidsRubyInstaller
 
     build_gem(File.join(Stage, Ruby192.rename),"qtbindings")
     build_gem(File.join(Stage, Ruby192.rename),"htmlentities")
-    build_gem(File.join(Stage, Ruby192.rename),"rubywarrior")
+    build_gem(File.join(Stage, Ruby192.rename),"rubywarrior-i18n")
     build_gem(File.join(Stage, Ruby192.rename),"gosu")
 
     kidsruby_stage_path = File.join(Stage, KidsRuby.name)
