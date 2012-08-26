@@ -1,10 +1,10 @@
 # KidsRuby Installer
 
-Kids Ruby Installer
+KidsRuby Installer
 
 ## Overview
 
-This project builds an installer for the Kids Ruby project http://kidsruby.com/
+This project builds an installer for the KidsRuby project http://kidsruby.com/
 
 This project is entirely based on RailsInstaller (http://railsinstaller.org)
 with additions for the kids ruby codebase.

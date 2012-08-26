@@ -1,4 +1,4 @@
-Copyright (c) 2010-2011 KidsRubyInstaller Team.
+Copyright (c) 2010-2012 The Hybrid Group + Friends
 
 Except:
 
