@@ -2,7 +2,7 @@
 InstallingLabel=Instalando [name], esto puede tomar algunos minutos...
 WelcomeLabel1=Bienvenido a [name]!
 WelcomeLabel2=Esto instalará [name/ver] en tu computadora, lo que incluye Ruby 1.9.2, Git, Sqlite3, DevKit, Rails 3, y KidsRuby.  Por favor, cierra cualquier aplicación de consola antes de continuar.
-WizardLicense=Acuerdo de Licencia de {#InstallerName}
+WizardLicense=Acuerdo de Licencia de KidsRuby
 LicenseLabel=
 LicenseLabel3=Por favor, lea los siguientes Acuerdos de Licencia y acepte los términos antes de continuar la instalación.
 LicenseAccepted=&Acepto todas las licencias
