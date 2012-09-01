@@ -1,3 +1,5 @@
+1.2.1 - Fixes to i18n typos and encoding issues
+
 1.2.0 - Add es, ja, and fr i18n version
 
 1.1.0 - Update to 1.1 editor
