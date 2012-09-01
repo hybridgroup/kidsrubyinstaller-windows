@@ -1,2 +1,5 @@
 Wayne E. Seguin (wayneeseguin+railsinstaller@gmail.com)
 Ron Evans (ron.evans@gmail.com)
+Aline Paponaud
+Masami Yamakawa
+Rafael Magana
