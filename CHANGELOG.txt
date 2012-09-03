@@ -1,3 +1,5 @@
+1.2.2 - More tweaks to i18n
+
 1.2.1 - Fixes to i18n typos and encoding issues
 
 1.2.0 - Add es, ja, and fr i18n version
