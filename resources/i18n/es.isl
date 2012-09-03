@@ -12,3 +12,4 @@ SelectDirDesc=Esta es la ubicación en la que Ruby, DevKit, Git, Rails, Sqlite an
 SelectDirLabel3=[name] será instalado en la siguiente carpeta. Presiona Instalar para continuar o presione Examinar para usar uno diferente.
 SelectDirBrowseLabel=Por favor, evite elegir carpetas que incluyan espacios en su nombre (ej. Archivos de Programa).
 DiskSpaceMBLabel=Espacio libre requerido: ~[mb] MB
+AddExecutablesToPath=Add executables for KidsRuby to the PATH

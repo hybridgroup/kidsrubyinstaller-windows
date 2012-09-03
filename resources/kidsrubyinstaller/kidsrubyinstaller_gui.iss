@@ -66,9 +66,9 @@ begin
   PathChkBox := TCheckBox.Create(Page);
   PathChkBox.Parent := Page.Surface;
   PathChkBox.State := cbChecked;
-  PathChkBox.Caption := 'Add executables for Ruby, Git and DevKit to the PATH ';
+  PathChkBox.Caption := CustomMessage('AddExecutablesToPath');
   PathChkBox.Alignment := taRightJustify;
-  PathChkBox.Top := ScaleY(95);
+  PathChkBox.Top := ScaleY(115);
   PathChkBox.Left := ScaleX(18);
   PathChkBox.Width := Page.SurfaceWidth;
   PathChkBox.Height := ScaleY(17);
