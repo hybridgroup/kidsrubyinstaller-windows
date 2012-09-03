@@ -12,4 +12,6 @@ SelectDirDesc=This is the location that Ruby, DevKit, Git, Rails, Sqlite and Kid
 SelectDirLabel3=[name] will be installed into the following folder. Click Install to continue or click Browse to use a different one.
 SelectDirBrowseLabel=Please avoid any folder name that contains spaces (e.g. Program Files).
 DiskSpaceMBLabel=Required free disk space: ~[mb] MB
+
+[CustomMessages]
 AddExecutablesToPath=Add executables for KidsRuby to the PATH

@@ -18,4 +18,6 @@ SelectDirDesc=Ruby・DevKit・Git・Rails・Sqlite・KidsRubyのインストール先の指定
 SelectDirLabel3=[name]が次のフォルダにインストールされます。継続するには「インストール」をクリックします。別のフォルダを選択するには「参照」をクリックします。
 SelectDirBrowseLabel=「Program Files」のようにスペースがあるフォルダ名を指定することはできません。
 DiskSpaceMBLabel=インストールに必要なディスクの空き容量: ~[mb] MB
+
+[CustomMessages]
 AddExecutablesToPath=Add executables for KidsRuby to the PATH
