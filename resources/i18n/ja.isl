@@ -20,4 +20,4 @@ SelectDirBrowseLabel=「Program Files」のようにスペースがあるフォルダ名を指定する
 DiskSpaceMBLabel=インストールに必要なディスクの空き容量: ~[mb] MB
 
 [CustomMessages]
-AddExecutablesToPath=Add executables for KidsRuby to the PATH
+AddExecutablesToPath=KidsRubyの実行ファイルをパス（PATH）に追加する
