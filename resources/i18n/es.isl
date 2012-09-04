@@ -14,4 +14,4 @@ SelectDirBrowseLabel=Por favor, evite elegir carpetas que incluyan espacios en s
 DiskSpaceMBLabel=Espacio libre requerido: ~[mb] MB
 
 [CustomMessages]
-AddExecutablesToPath=Add executables for KidsRuby to the PATH
+AddExecutablesToPath=Añadir ejecutables para KidsRuby a la variable de entorno PATH
