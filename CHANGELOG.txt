@@ -1,3 +1,6 @@
+1.2.3 - Minor additiona ltranslation for AddExecutablesToPath in ja and
+es
+
 1.2.2 - More tweaks to i18n
 
 1.2.1 - Fixes to i18n typos and encoding issues
