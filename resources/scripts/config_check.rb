@@ -65,10 +65,10 @@ git:
 ssh:
   public_key: #{Config[:ssh_key]}
 ruby:
-  bin:        #{File.join(Config[:kidsrubyinstaller_path], "Ruby1.9.2", "bin", "ruby.exe")}
+  bin:        #{File.join(Config[:kidsrubyinstaller_path], "Ruby1.9.3", "bin", "ruby.exe")}
   version:    #{run "ruby -v"}
 rails:
-  bin:        #{File.join(Config[:kidsrubyinstaller_path], "Ruby1.9.2", "bin", "rails.bat")}
+  bin:        #{File.join(Config[:kidsrubyinstaller_path], "Ruby1.9.3", "bin", "rails.bat")}
   version:    #{run "rails -v"}
 
 "
