@@ -49,7 +49,7 @@ A MSYS/MinGW based toolkit that enables KidsRuby Installer to build native C/C++
 packages, both for Ruby and gems. DevKit is built and maintained by the
 wonderful folks over at the RubyInstaller (http://rubyinstaller.org/) project.
 
-### Ruby 1.9.3 on Windows
+### Ruby 1.9.2 on Windows
 
 KidsRuby Installer is a self contained package installer which installs Ruby and
 RubyGems on a windows system, head over to http://rubyinstaller.org/ for more

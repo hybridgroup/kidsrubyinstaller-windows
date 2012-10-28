@@ -9,16 +9,16 @@
 ; Usage:
 ;  iscc rubyinstaller.iss /dInstallerVersion=0.1.0
 ;                         /dStagePath=stage
-;                         /dRubyPath=Ruby/1.9.3
+;                         /dRubyPath=Ruby/1.9.2
 ;                         [/dInstVersion=26-OCT-2009]
 
 ; Full example:
 ; iscc resouces\kidsrubyinstaller\kidsrubyinstaller.iss \
 ;       /dInstallerVersion=0.1.0 \
 ;       /dStagePath=stage \
-;       /dRubyPath=Ruby1.9.3 \
+;       /dRubyPath=Ruby1.9.2 \
 ;       /opkg
-;       /fkidsrubyinstaller-1.3.0.exe
+;       /fkidsrubyinstaller-0.7.0.exe
 
 #if Defined(InstallerVersion) == 0
   #error Please provide a InstallerVersion definition using a /d parameter.

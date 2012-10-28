@@ -250,7 +250,7 @@ module KidsRubyInstaller
 
         FileUtils.mv(
           File.join(Stage, file),
-          File.join(Stage, Ruby193.rename, "bin", file)
+          File.join(Stage, Ruby192.rename, "bin", file)
         )
 
       end
@@ -266,7 +266,7 @@ module KidsRubyInstaller
 
     devkit_path = File.join(Stage, DevKit.target)
 
-    ruby_path = File.join(Stage, Ruby193.rename)
+    ruby_path = File.join(Stage, Ruby192.rename)
 
     FileUtils.mkdir_p(devkit_path) unless File.directory?(devkit_path)
 
@@ -302,7 +302,7 @@ module KidsRubyInstaller
   def self.stage_gems
     section Gems
 
-    build_gems(File.join(Stage, Ruby193.rename), Gems.list)
+    build_gems(File.join(Stage, Ruby192.rename), Gems.list)
   end
 
   # Clones the latest kidsruby release branch into the staged Ruby path.
@@ -310,10 +310,10 @@ module KidsRubyInstaller
 
     section KidsRuby
 
-    build_gem(File.join(Stage, Ruby193.rename),"qtbindings")
-    build_gem(File.join(Stage, Ruby193.rename),"htmlentities")
-    build_gem(File.join(Stage, Ruby193.rename),"rubywarrior-i18n")
-    build_gem(File.join(Stage, Ruby193.rename),"gosu")
+    build_gem(File.join(Stage, Ruby192.rename),"qtbindings")
+    build_gem(File.join(Stage, Ruby192.rename),"htmlentities")
+    build_gem(File.join(Stage, Ruby192.rename),"rubywarrior-i18n")
+    build_gem(File.join(Stage, Ruby192.rename),"gosu")
 
     kidsruby_stage_path = File.join(Stage, KidsRuby.name)
 
