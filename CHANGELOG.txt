@@ -1,4 +1,6 @@
-1.2.3 - Minor additiona ltranslation for AddExecutablesToPath in ja and
+1.3.0 - Add support for serial port and Sphero gems
+
+1.2.3 - Minor additional translation for AddExecutablesToPath in ja and
 es
 
 1.2.2 - More tweaks to i18n
