@@ -42,7 +42,7 @@
   :title: Ruby 1.9.2
   :name: Ruby192
   :regex: '^.*$'
-  :url: "http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/ruby-1.9.2-p320-i386-mingw32.7z"
+  :url: "http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/ruby-1.9.2-p290-i386-mingw32.7z"
   :rename: Ruby1.9.2
 
 :git:
