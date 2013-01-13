@@ -314,7 +314,7 @@ module KidsRubyInstaller
     build_gem(File.join(Stage, Ruby192.rename),"htmlentities")
     build_gem(File.join(Stage, Ruby192.rename),"rubywarrior-i18n")
     build_gem(File.join(Stage, Ruby192.rename),"gosu")
-    build_gem(File.join(Stage, Ruby192.rename),"ruby-serialport")
+    build_gem(File.join(Stage, Ruby192.rename),"hybridgroup-serialport")
     build_gem(File.join(Stage, Ruby192.rename),"hybridgroup-sphero")
 
     kidsruby_stage_path = File.join(Stage, KidsRuby.name)
