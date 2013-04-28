@@ -1,3 +1,5 @@
+1.3.3 - Support for serial to socket version of Sphero gem
+
 1.3.0 - Add support for serial port and Sphero gems
 
 1.2.3 - Minor additional translation for AddExecutablesToPath in ja and
